@@ -1,11 +1,4 @@
 import React from 'react';
-import If from '../if/If'
-
-// props.className = optional classnames
-// props.style = optional in-line style
-// props.headers = the header data (raw json)
-// props.body = the body data (raw json)
-// props.tabWidth = the spaces for tabs when pretty-printed
 
 // Alter the <Results /> component as follows:
 // Add support for all REST methods
