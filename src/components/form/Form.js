@@ -18,7 +18,7 @@ function Form(props) {
 
         <div className={props.className} style={props.style}>
             <div className='url-entry'>
-                <label>API URL:</label>
+                <label>Enter API URL:</label>
                 <input
                     type='text'
                     value={props.url}
@@ -27,7 +27,8 @@ function Form(props) {
             </div>
 
             <div className='method-select'>
-                <select onChange={props.onMethodChange}>
+                <select className='select-css' onChange={props.onMethodChange}>
+                    <option>Select a method...</option>
                     <option value='GET'>Get</option>
                     <option value='POST'>Post</option>
                     <option value='PUT'>Put</option>
@@ -51,7 +52,7 @@ function Form(props) {
                 ></textarea>
             </div>
 
-            <button onClick={props.onSubmit}>Submit</button>
+            <button className="go" onClick={props.onSubmit}>Go</button>
         </div>
     );
 }

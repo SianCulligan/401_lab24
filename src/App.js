@@ -4,9 +4,11 @@ import Form from './components/form/Form';
 import If from './components/if/If';
 import Results from './components/results/Results';
 import History from './components/history/History';
-import Header from './components/header/Header'
+import Header from './components/header/Header';
 
-import './components/header/Header.scss'
+import './components/header/Header.scss';
+import './components/form/Form.scss';
+import './components/results/Results.scss';
 
 
 class App extends React.Component {

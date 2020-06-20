@@ -7,7 +7,6 @@ ul {
     top: 0;
     width: 10%;
     height: 100%;
-
   }
 
   ul li img {
@@ -46,25 +45,16 @@ body {
     display: block;
   }
   
-//   .sidenav a:hover {
-//     -webkit-border-radius: 10px;
-//     -moz-border-radius: 10px;
-//     border-radius: 10px;
-//  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);
-// -moz-box-shadow:    0px 0px 30px 0px rgba(0, 255, 0, 0.67);
-// box-shadow:         0px 0px 30px 0px rgba(0, 255, 0, 0.67);
-// }
 img:last-of-type:hover{
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
- -webkit-box-shadow: 0px 0px 30px 0px rgba(2, 167, 196, 0.644);
--moz-box-shadow:    0px 0px 30px 0px rgba(232, 0, 0, 0.67);
-box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.644);
 }
 
 h1 {
-    background-color: lightcoral;
     top: 0;
+    font-family: monospace;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 100%;
 }  
 

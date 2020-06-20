@@ -11,6 +11,7 @@ function Results(props) {
    
     return (
         <>
+        <div className="results-container">
         <div className={props.className} style={props.style}>
 
             <div className='headers'>
@@ -19,6 +20,7 @@ function Results(props) {
             <div className='body'>
                 <pre>{JSON.stringify(props.body, null, props.tabWidth)}</pre>
             </div>
+        </div>
         </div>
         </>
     );

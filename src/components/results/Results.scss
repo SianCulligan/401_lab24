@@ -1,81 +1,48 @@
-body, html {
-    height: 100%;
-    text-align: center;
+$notQuiteWhite: whitesmoke;
+$resultsBackground: rgb(242, 242, 242);
+$borders: rgb(206, 206, 206);
+$notQuiteWhite: whitesmoke;
+$formInput:   rgb(226, 235, 254);
+
+@mixin border {
+  border: 1px solid $borders;
 }
 
-body {
-  background-color: #242F3F;
+
+@mixin centerThings{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.loader-wrapper {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(160, 156, 156, 0.39);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #Fff;
-  animation: loader 2s infinite ease;
-}
 
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
-}
+#results {
+  width: 90%;
+  height: 600px;
+  overflow: scroll;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  padding: 1%;
+  font-family: monospace;
+  background-color: $resultsBackground;
+   @include border;
+   @include centerThings();
+ }
 
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  
-  25% {
-    transform: rotate(180deg);
-  }
-  
-  50% {
-    transform: rotate(180deg);
-  }
-  
-  75% {
-    transform: rotate(360deg);
-  }
-  
-  100% {
-    transform: rotate(360deg);
-  }
-}
+ .headers, .body {
+   font-size: 2vw;
+ }
 
-@keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-  
-  25% {
-    height: 0%;
-  }
-  
-  50% {
-    height: 100%;
-  }
-  
-  75% {
-    height: 100%;
-  }
-  
-  100% {
-    height: 0%;
-  }
-}
+ .results-container {
+  width: 90%;
+  height: 600px;
+  overflow: scroll;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  padding: 1%;
+  font-family: monospace;
+  background-color: $resultsBackground;
+  @include border();
+  @include centerThings();
+ }
