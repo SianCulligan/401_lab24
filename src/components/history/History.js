@@ -63,6 +63,7 @@ class History extends React.Component {
 
         return (
             <>
+            <div className="history-wrapper">
                 <If condition={this.state.redirect}>
                     <Redirect push to='/' />
                 </If>
@@ -72,6 +73,7 @@ class History extends React.Component {
                         style={this.props.style}
                     >{historyElements}</div>
                 </If>
+                </div>
             </>
         );
     }

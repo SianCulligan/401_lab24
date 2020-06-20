@@ -9,6 +9,8 @@ import Header from './components/header/Header';
 import './components/header/Header.scss';
 import './components/form/Form.scss';
 import './components/results/Results.scss';
+import './components/history/History.scss';
+import './design/design.scss'
 
 
 class App extends React.Component {
