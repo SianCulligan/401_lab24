@@ -8,7 +8,7 @@
 
 
 import React from 'react';
-import If from './If';
+import If from '../if/If'
 import { Redirect } from 'react-router-dom';
 
 class History extends React.Component {

@@ -6,6 +6,9 @@ import Results from './components/results/Results';
 import History from './components/history/History';
 import Header from './components/header/Header'
 
+import './components/header/Header.scss'
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
