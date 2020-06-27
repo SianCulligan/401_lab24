@@ -1,0 +1,47 @@
+$notQuiteWhite: whitesmoke;
+$resultsBackground: rgb(242, 242, 242);
+$borders: rgb(206, 206, 206);
+$formInput:   rgb(226, 235, 254);
+
+@mixin border {
+  border: 1px solid $borders;
+}
+
+
+@mixin centerThings{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#results {
+  width: 90%;
+  height: 600px;
+  overflow: scroll;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  padding: 1%;
+  font-family: monospace;
+  background-color: $resultsBackground;
+   @include border;
+   @include centerThings();
+ }
+
+ .headers, .body {
+   font-size: 2vw;
+ }
+
+ .results-container {
+  width: 90%;
+  height: 600px;
+  overflow: scroll;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  padding: 1%;
+  font-family: monospace;
+  background-color: $resultsBackground;
+  @include border();
+  @include centerThings();
+ }
